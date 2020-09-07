@@ -10,7 +10,6 @@ y = Symbol('y')
 z = Symbol('z')
 
 # configuration
-DEBUG = True
 
 # instantiate the app
 app = Flask(__name__)
@@ -62,4 +61,4 @@ def all_books():
  
     return jsonify(x)
 if __name__ == '__main__':
-    app.run(threaded=True,port=5000)
+    app.run(threaded=True)
