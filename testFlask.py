@@ -33,6 +33,11 @@ def calc(a):
     x = x.replace('<=','⩽')
     return x
 
+@app.route('/',methods=['GET'])
+def origin():
+    return 'hello'
+
+
 @app.route('/python', methods=['POST','GET'])
 @cross_origin()
 def all_books():
