@@ -14,7 +14,7 @@ DEBUG = True
 
 # instantiate the app
 app = Flask(__name__)
-app.config.from_object(__name__)
+#app.config.from_object(__name__)
 
 # enable CORS
 cors = CORS(app, resources={r"/api/*": {"origins": "*"}})
@@ -35,13 +35,11 @@ def calc(a):
 
 @app.route('/',methods=['GET'])
 def origin():
-    return 'hello'
-
+    return "<h1>Welcome to our server !!</h1>"
 
 @app.route('/python', methods=['POST','GET'])
 @cross_origin()
 def all_books():
-    response_object = {'status': 'success'}
     if request.method == 'POST':
         post_data = request.get_data()
         print(post_data)
@@ -64,4 +62,4 @@ def all_books():
  
     return jsonify(x)
 if __name__ == '__main__':
-    app.run()
+    app.run(threaded=True,port=5000)
