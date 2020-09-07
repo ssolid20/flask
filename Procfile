@@ -1,1 +1,1 @@
-web: python3 testFlask.py 
+worker: python3 testFlask.py --log-file -
