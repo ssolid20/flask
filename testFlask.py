@@ -1,6 +1,6 @@
 from flask import Flask, jsonify,request
 from flask_cors import CORS,cross_origin
-from sympy import Integral, Symbol,sympify,S,diff,exp, solve,Derivative,Limit,simplify,cos,sin,log, latex,pprint
+from sympy import Integral, Symbol,sympify,S,diff,exp,nonlinsolve,linsolve, solve,Derivative,Limit,simplify,cos,sin,log, latex,pprint
 import sys, json
 import sympy
 import math 
