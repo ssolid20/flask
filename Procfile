@@ -1,1 +1,1 @@
-worker: python3 testFlask.py --log-file -
+web: gunicorn testFlask:app
