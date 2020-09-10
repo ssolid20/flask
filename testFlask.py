@@ -1,6 +1,6 @@
 from flask import Flask, jsonify,request
 from flask_cors import CORS,cross_origin
-from sympy import Integral, Symbol,sympify,S, solve,Derivative,Limit,simplify,cos,sin,log, latex,pprint
+from sympy import Integral, Symbol,sympify,S,diff,exp, solve,Derivative,Limit,simplify,cos,sin,log, latex,pprint
 import sys, json
 import sympy
 import math 
@@ -53,7 +53,7 @@ def all_books():
             x = x.replace('sqrt','√')
             x = x.replace('**','^') 
             x = x.replace('I','√(-1)')
-            x = x.replace('exp','e^')
+            x = x.replace('exp(','e^(')
             x = x.replace('oo','∞')
             x = x.replace('>=','⩾')
             x = x.replace('<=','⩽')
