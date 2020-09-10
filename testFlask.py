@@ -58,7 +58,15 @@ def all_books():
             x = x.replace('>=','⩾')
             x = x.replace('<=','⩽')
         except:
-            x= "Couldn't regonise problem or there are no solutions, try again"
+            x= "Couldn't regonise problem or there are no solutions, try again"   
+        finally:
+            x = x.replace('sqrt','√')
+            x = x.replace('**','^') 
+            x = x.replace('I','√(-1)')
+            x = x.replace('exp(','e^(')
+            x = x.replace('oo','∞')
+            x = x.replace('>=','⩾')
+            x = x.replace('<=','⩽')
         
         #x= eval(post_data)
         #response_object=x
