@@ -53,6 +53,7 @@ def all_books():
             x = x.replace('sqrt','√')
             x = x.replace('**','^') 
             x = x.replace('I','√(-1)')
+            x = x.replace('exp','e^')
             x = x.replace('oo','∞')
             x = x.replace('>=','⩾')
             x = x.replace('<=','⩽')
