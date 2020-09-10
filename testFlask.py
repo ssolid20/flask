@@ -46,15 +46,18 @@ def all_books():
         print(g)
         g = g[1:]
         print( g )
-        x = eval(post_data)
-        x= str(x)
-        print(x)
-        x = x.replace('sqrt','√')
-        x = x.replace('**','^') 
-        x = x.replace('I','√(-1)')
-        x = x.replace('oo','∞')
-        x = x.replace('>=','⩾')
-        x = x.replace('<=','⩽')
+        try:
+            x = eval(post_data)
+            x= str(x)
+            print(x)
+            x = x.replace('sqrt','√')
+            x = x.replace('**','^') 
+            x = x.replace('I','√(-1)')
+            x = x.replace('oo','∞')
+            x = x.replace('>=','⩾')
+            x = x.replace('<=','⩽')
+        except:
+            x= "Couldn't regonise problem or there are no solutions, try again"
         
         #x= eval(post_data)
         #response_object=x
