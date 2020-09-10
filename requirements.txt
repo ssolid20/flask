@@ -6,7 +6,6 @@ chardet==3.0.4
 click==7.1.2
 configobj==5.0.6
 cryptography==2.1.4
-cupshelpers==1.0
 cycler==0.10.0
 defer==1.0.6
 distro-info===0.18ubuntu0.18.04.1
