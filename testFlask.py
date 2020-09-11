@@ -58,6 +58,8 @@ def all_books():
             x = x.replace('oo','∞')
             x = x.replace('>=','⩾')
             x = x.replace('<=','⩽')
+            x=x.replace('3.14159265358979','π')
+            x=x.replace('2.71828182845905','e')
         except:
             x= "Couldn't regonise problem or there are no solutions, try again"   
         finally:
@@ -68,6 +70,8 @@ def all_books():
             x = x.replace('oo','∞')
             x = x.replace('>=','⩾')
             x = x.replace('<=','⩽')
+            x=x.replace('3.14159265358979','π')
+            x=x.replace('2.71828182845905','e')
         
         #x= eval(post_data)
         #response_object=x
