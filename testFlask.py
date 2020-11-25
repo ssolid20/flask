@@ -48,12 +48,12 @@ def all_books():
         g = g[1:]
         print( g )
         try:
-            b=post_data.replace('}',')')
-            b=b.replace('sin{','sin(')
-            b=b.replace('cos{','cos(')
-            b=b.replace('tan{','tan(')
+            post_data=post_data.replace('}',')')
+            post_data=post_data.replace('sin{','sin(')
+            post_data=post_data.replace('cos{','cos(')
+            post_data=post_data.replace('tan{','tan(')
            
-            x = eval(b)
+            x = eval(post_data)
             x= str(x)
             print(x)
             x = x.replace('sqrt','√')
